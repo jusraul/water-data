@@ -1,4 +1,6 @@
-install.packages("dataRetrieval")
+if (!requireNamespace("dataRetrieval", quietly = TRUE)) {
+  install.packages("dataRetrieval")
+}
 library(dataRetrieval)
 
 # Retrieve USGS water data stations (sites) for a state (e.g., California)
